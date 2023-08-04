@@ -1,0 +1,35 @@
+/* Add your styles for the "Catálogo de productos" view here */
+h1 {
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.product-image {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.delete-product-btn {
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-product-btn:hover {
+  background-color: #d32f2f;
+}

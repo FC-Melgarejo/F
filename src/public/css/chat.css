@@ -1,0 +1,28 @@
+/* Add your styles for the "Chat" view here */
+h1 {
+  color: #333;
+}
+
+.inputContainer {
+  margin-top: 20px;
+}
+
+.labelChatBox {
+  display: block;
+}
+
+#chatbox {
+  width: 100%;
+  padding: 8px;
+}
+
+.messageContainer {
+  margin-top: 20px;
+}
+
+#messageLogs {
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}

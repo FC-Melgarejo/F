@@ -1,0 +1,34 @@
+/* Add your styles for the "Vista desde realTimeProducts" view here */
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #666;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.editButton, .deleteButton {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.editButton:hover, .deleteButton:hover {
+  background-color: #45a049;
+}

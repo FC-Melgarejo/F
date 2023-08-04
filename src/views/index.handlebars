@@ -1,0 +1,44 @@
+<h1>Catálogo de productos</h1>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Código</th>
+      <th>Precio</th>
+      <th>Estado</th>
+      <th>Stock</th>
+      <th>Categoría</th>
+      <th>Imagen</th>
+      <th>Eliminar</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each products}}
+    <tr>
+      <td>{{id}}</td>
+      <td>{{title}}</td>
+      <td>{{description}}</td>
+      <td>{{code}}</td>
+      <td>{{price}}</td>
+      <td>{{status}}</td>
+      <td>{{stock}}</td>
+      <td>{{category}}</td>
+      <td>
+        <div class="image-box">
+          <img class="product-image" src="{{thumbnails}}" alt="{{title}}">
+        </div>
+      </td>
+      <td>
+        <form class="delete-product-form" action="/delete-product/{{id}}" method="POST">
+          <input type="hidden" name="_method" value="DELETE"> 
+          <button class="delete-product-btn" data-product-id="{{id}}">Eliminar</button>
+        </form>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<script src="/js/index.js"></script>
