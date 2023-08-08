@@ -2,7 +2,7 @@
   "productos_deportivos": [
     {
       "id": 1,
-      "title": "Balón de fútbol",
+      "title": "Pelota de fútbol",
       "description": "Balón de fútbol profesional, tamaño oficial, ideal para entrenamientos y partidos.",
       "code": "FB-12345",
       "price": 25.99,

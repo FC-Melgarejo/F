@@ -3,15 +3,15 @@ const path = require('path');
 const mongoose = require('mongoose')
 const handlebars = require('express-handlebars');
 const socketServer = require('./utils/io');
-const mongodbUri = process.env.MONGODB_URI;
+
 
 // Implementación de enrutadores
 const productsRouter = require('./router/productRouter');
-const cartsRouter = require('./router/cartRouter');
+const cartsRouter = require('./router/cartsRouter');
 const viewsRouterFn = require('./router/viewsRouter');
 
 const app = express();
-const MONGODB_CONNECT = `mongodb+srv://faticarolinamelgarejo2:7JNa5v6XXnc7YQUl@cluster0.8inu9.mongodb.net/PRACTICAINTEGRADORA=true&w=majority`
+const MONGODB_CONNECT = `mongodb+srv://melgarejofatimacarolina:8g3ZKFx4JtMWDIRS@cluster0.rhfgipr.mongodb.net/ecommerceretryWrites=true&w=majority`
 mongoose.connect(MONGODB_CONNECT)
   .then(() => console.log('Conexión exitosa a la base de datos'))
   .catch((error) => {
